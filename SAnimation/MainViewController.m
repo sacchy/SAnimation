@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "SAnime.h"
 
 @interface MainViewController ()
 
@@ -14,25 +15,42 @@
 
 @implementation MainViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+    {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        btn.frame = CGRectMake(WINSIZE.width/2-100, 100, 200, 30);
+        [btn setTitle:@"Short Animation" forState:UIControlStateNormal];
+        [btn setTitle:@"Push!!" forState:UIControlStateHighlighted];
+        [btn addTarget:self action:@selector(shortAnime) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn];
+    }
+    {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        btn.frame = CGRectMake(WINSIZE.width/2-100, 200, 200, 30);
+        [btn setTitle:@"EndlessAnimation" forState:UIControlStateNormal];
+        [btn setTitle:@"Push!!" forState:UIControlStateHighlighted];
+        [btn addTarget:self action:@selector(endlessAnime) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn];
+    }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (void)shortAnime
+{
+    NSString *text = @"I am the bone of my sword";
+    [SAnime showWithText:text dispTime:kLenShort animationTimes:2];          // NormalMode
+}
+
+- (void)endlessAnime
+{
+    NSString *text = @"I am the bone of my sword. Steel is my body,and fire is my blood...So as I pray,unlimited blade works.";
+    [SAnime showWithText:text dispTime:kLenLong animationTimes:ENDLESSMODE]; // EndlessMode
+}
 @end

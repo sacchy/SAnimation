@@ -20,6 +20,7 @@
 		C0DC2CB51807C37500EB08AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0DC2CB31807C37500EB08AF /* InfoPlist.strings */; };
 		C0DC2CB71807C37500EB08AF /* SAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DC2CB61807C37500EB08AF /* SAnimationTests.m */; };
 		C0DC2CC21807C3CB00EB08AF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DC2CC11807C3CB00EB08AF /* MainViewController.m */; };
+		F1A8B4F5180958940076E2B9 /* SAnime.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A8B4F4180958940076E2B9 /* SAnime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		C0DC2CB61807C37500EB08AF /* SAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAnimationTests.m; sourceTree = "<group>"; };
 		C0DC2CC01807C3CB00EB08AF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		C0DC2CC11807C3CB00EB08AF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F1A8B4F3180958940076E2B9 /* SAnime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAnime.h; sourceTree = "<group>"; };
+		F1A8B4F4180958940076E2B9 /* SAnime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAnime.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				C0DC2CA11807C37500EB08AF /* AppDelegate.m */,
 				C0DC2CC01807C3CB00EB08AF /* MainViewController.h */,
 				C0DC2CC11807C3CB00EB08AF /* MainViewController.m */,
+				F1A8B4F3180958940076E2B9 /* SAnime.h */,
+				F1A8B4F4180958940076E2B9 /* SAnime.m */,
 				C0DC2CA31807C37500EB08AF /* Images.xcassets */,
 				C0DC2C981807C37500EB08AF /* Supporting Files */,
 			);
@@ -244,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A8B4F5180958940076E2B9 /* SAnime.m in Sources */,
 				C0DC2CA21807C37500EB08AF /* AppDelegate.m in Sources */,
 				C0DC2CC21807C3CB00EB08AF /* MainViewController.m in Sources */,
 				C0DC2C9E1807C37500EB08AF /* main.m in Sources */,
@@ -321,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -354,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -447,6 +453,7 @@
 				C0DC2CBC1807C37500EB08AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0DC2CBD1807C37500EB08AF /* Build configuration list for PBXNativeTarget "SAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +462,7 @@
 				C0DC2CBF1807C37500EB08AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

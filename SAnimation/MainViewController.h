@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define WINSIZE [UIScreen mainScreen].bounds.size
 @interface MainViewController : UIViewController
-
+- (void)shortAnime;
+- (void)endlessAnime;
 @end

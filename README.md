@@ -1,4 +1,4 @@
-SAnimation
+SAnimation(objective-c)
 ======================
 
 テキストスクロールアニメーションを提供
